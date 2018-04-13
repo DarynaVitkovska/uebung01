@@ -8,9 +8,7 @@ class CharStackImpl implements CharStack {
 
     @Override
     public void push(char w) {
-        Element e = new Element();
-        e.w = w;
-        e.next=top;
+        Element e = new Element(w,top);
         top = e;
         len++;
     }
